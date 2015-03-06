@@ -1,3 +1,23 @@
+.colora{
+    color: #3AFCD9;
+}
+
+.colorb{
+    color: #FFF1B0;
+}
+
+.colorc{
+    color: #82E8AE;
+}
+
+.colord{
+    color: #FF4066;
+}
+
+.colore{
+    color: #FFF;
+}
+
 #logo{
     border: 0px;
     box-shadow: 0px 0px 0px;
@@ -17,6 +37,12 @@
 
 #subtitle{
     font-size: 5em;
+    margin-top: -50px;
+    color: #FFF1B0;
+}
+
+#fancy{
+    font-size: 6em;
     margin-top: -50px;
     color: #FFF1B0;
 }
