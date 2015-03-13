@@ -78,8 +78,75 @@
           <img src="img/git_homepage.png" height="300" width="820" alt="Git Homepage">
         </a>
       </section>
+		
+		<!-- SLIDE 5 -->
+		<section>
+			<h2>Installing Git</h2>
+			<div class="fragment">
+				<p>Linux</p>
+				<pre><code data-trim>
+$ apt-get install git
+				</code></pre>
+			</div>
+			
+			<div class="fragment">
+				<p>Mac</p>
+				<a href="http://git-scm.com/download/mac">Download Git for Mac</a>	
+			</div>
+			
+			<div class="fragment">
+				<p>Windows</p>
+				<a href="http://git-scm.com/download/win">Download Git for Windows</a>
+			</div>
+		</section>
+		
+  	 	<!-- SLIDE 6 -->
+  	 	<section>
+  	 		<h2>First-Time Git Setup</h2>
+  			<pre><code data-trim>
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+  			</code></pre>
+  	 	</section>
+		
+		<!-- SLIDE 7 -->
+		<section>
+			
+		<h2>Getting Help</h2>
+		<pre><code data-trim>
+$ git help <command>
+$ git <command> --help
+$ man git <command>
+		</code></pre>
+		
+		<p>Example: Checking config help</p>
+		<pre><code data-trim>
+$ git help config
+		</code></pre>
+		</section>
+		
+		<!-- SLIDE 8 -->
+		<section>
+			<h2>Creating a Git Repository</h2>
+			<pre><code data-trim>
+$ git init
+			</code></pre>
+			<p>Creates .git file that contains all of your necessary repository files <br />
+				Nothing is tracked yet</p>
+		</section>
+		
+		<!-- SLIDE 9 -->
+		<section>
+			<h2>The three stages of a Git Repository</h2>
+			<ol>
+				<li>Working Directory</li>
+				<li>Staging Area</li>
+				<li>Repository</li>
+				<li>Repeat</li>
+				<li>Profit?</li>
+			</ol>
+		</section>
     </div>
-
   </div>
 
   <script src="lib/js/head.min.js"></script>
