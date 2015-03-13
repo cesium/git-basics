@@ -27,15 +27,12 @@ A Presentation of the Git Basics
   + Basic commands:
     + Checkout (-b)
     + Merge
-- - -
-- Try It
-- - -
-
-5. Cool Shit
+5. Your Turn - **Give it a try!**
+6. Cool Shit
   + --pretty
   + --amend
   + reset --hard
-6. I can't do it Alone!
+7. I can't do it Alone!
   + Documentation
   + GitHub and Bitbucket
   + Software for different OSs
