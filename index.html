@@ -104,8 +104,8 @@
   	 		<h2>First-Time Git Setup</h2>
         <p>Setup your username and email first of all to avoid commiting without
           your information.</p>
-  			<pre><code data-trim>$ git config --global user.name "John Doe"
-$ git config --global user.email johndoe@example.com</code></pre>
+  			<pre><code data-trim>$ git config --global <span class="colorb">user.name</span> "John Doe"
+$ git config --global <span class="colorb">user.email</span> johndoe@example.com</code></pre>
   	 	</section>
 
 		  <!-- SLIDE 7 -->
@@ -113,8 +113,8 @@ $ git config --global user.email johndoe@example.com</code></pre>
 
 		    <h2>Getting Help</h2>
 		    <pre><code data-trim>$ git help <command>
-$ git ><span class="colorc">command</span>< --help
-$ man git ><span class="colorc">command</span><</code></pre>
+$ git &lt;<span class="colorc">command</span>&gt; --help
+$ man git &lt;<span class="colorc">command</span>&gt;</code></pre>
 
 		    <p>Example: Checking config help</p>
 		    <pre><code data-trim>$ git help config</code></pre>
@@ -152,7 +152,7 @@ $ man git ><span class="colorc">command</span><</code></pre>
         <h3>2. The Staging Area</h3>
         <p>After you've done your changes, you can add files to the staging area with:
 
-          <pre><code data-trim>$ git add >filename< (Add files)
+          <pre><code data-trim>$ git add &lt;<span class="colorc">filename</span>&gt; (Add files)
 $ git add --all (To add all files)</code></pre>
 
           An example:
@@ -185,7 +185,7 @@ $ git add --all (To add all files)</code></pre>
         This is when to use push, so the changes you made on your computer propragate
         to the repository.
 
-        <pre><code data-trim>$ git push origin >branch name< </code></pre></p>
+        <pre><code data-trim>$ git push origin &lt;<span class="colorc">branch name</span>&gt;</code></pre></p>
 
         An example:
 
