@@ -20,10 +20,11 @@
 
   <link rel="stylesheet" href="css/reveal.css">
   <link rel="stylesheet" href="css/theme/moon.css" id="theme">
-  <link rel="stylesheet" href="css/custom.css">
 
   <!-- Code syntax highlighting -->
   <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="css/custom.css">
 
   <!-- Printing and PDF exports -->
   <script>
@@ -67,7 +68,7 @@
       <section>
         <h3 class="colora">What is</h3><br>
         <h2 id="fancy">GIT?</h2>
-          <i class="fa fa-code-fork colorc"></i><span class="colora"> What is it good for?</span><br> 
+          <i class="fa fa-code-fork colorc"></i><span class="colora"> What is it good for?</span><br>
           <i class="fa fa-code-fork colorc"></i><span class="colora"> Why do I need it?</span>
       </section>
 
@@ -78,74 +79,119 @@
           <img src="img/git_homepage.png" height="300" width="820" alt="Git Homepage">
         </a>
       </section>
-		
+
 		<!-- SLIDE 5 -->
-		<section>
-			<h2>Installing Git</h2>
-			<div class="fragment">
+		  <section>
+		  	<h2>Installing Git</h2>
+		  	<div class="fragment">
 				<p>Linux</p>
-				<pre><code data-trim>
-$ apt-get install git
-				</code></pre>
-			</div>
-			
-			<div class="fragment">
+				<pre><code data-trim>$ apt-get install git</code></pre>
+		  	</div>
+
+			 <div class="fragment">
 				<p>Mac</p>
-				<a href="http://git-scm.com/download/mac">Download Git for Mac</a>	
-			</div>
-			
-			<div class="fragment">
+				<a href="http://git-scm.com/download/mac" class="colord">Download Git for Mac</a>
+			 </div>
+
+			 <div class="fragment">
 				<p>Windows</p>
-				<a href="http://git-scm.com/download/win">Download Git for Windows</a>
-			</div>
-		</section>
-		
+				<a href="http://git-scm.com/download/win" class="colord">Download Git for Windows</a>
+			 </div>
+		  </section>
+
   	 	<!-- SLIDE 6 -->
   	 	<section>
   	 		<h2>First-Time Git Setup</h2>
-  			<pre><code data-trim>
-$ git config --global user.name "John Doe"
-$ git config --global user.email johndoe@example.com
-  			</code></pre>
+        <p>Setup your username and email first of all to avoid commiting without
+          your information.</p>
+  			<pre><code data-trim>$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com</code></pre>
   	 	</section>
-		
-		<!-- SLIDE 7 -->
-		<section>
-			
-		<h2>Getting Help</h2>
-		<pre><code data-trim>
-$ git help <command>
-$ git <command> --help
-$ man git <command>
-		</code></pre>
-		
-		<p>Example: Checking config help</p>
-		<pre><code data-trim>
-$ git help config
-		</code></pre>
-		</section>
-		
-		<!-- SLIDE 8 -->
-		<section>
-			<h2>Creating a Git Repository</h2>
-			<pre><code data-trim>
-$ git init
-			</code></pre>
-			<p>Creates .git file that contains all of your necessary repository files <br />
+
+		  <!-- SLIDE 7 -->
+		  <section>
+
+		    <h2>Getting Help</h2>
+		    <pre><code data-trim>$ git help <command>
+$ git ><span class="colorc">command</span>< --help
+$ man git ><span class="colorc">command</span><</code></pre>
+
+		    <p>Example: Checking config help</p>
+		    <pre><code data-trim>$ git help config</code></pre>
+		  </section>
+
+		  <!-- SLIDE 8 (Creating a Git Repository) -->
+		  <section>
+		  	<h2>Creating a Git Repository</h2>
+		  	<pre><code data-trim>$ git init</code></pre>
+		  	<p>Creates .git file that contains all of your necessary repository files <br />
 				Nothing is tracked yet</p>
-		</section>
-		
-		<!-- SLIDE 9 -->
-		<section>
-			<h2>The three stages of a Git Repository</h2>
-			<ol>
-				<li>Working Directory</li>
-				<li>Staging Area</li>
-				<li>Repository</li>
-				<li>Repeat</li>
-				<li>Profit?</li>
-			</ol>
-		</section>
+		  </section>
+
+		  <!-- SLIDE 9 (The Three States) -->
+		  <section>
+        <section>
+        <h2>The Three States</h2>
+        <p>Your files can have three states:
+          <ol>
+             <li>Modified</li>
+             <li>Staged</li>
+             <li>Commited</li>
+           </ol>
+         </p>
+        </section>
+
+        <section>
+        <h3>1. Working Directory</h3>
+        <p>This is the files you have in your computer,
+          the ones you are currently working. <br>
+          When you edit the files they are modified.</p>
+        </section>
+
+        <section>
+        <h3>2. The Staging Area</h3>
+        <p>After you've done your changes, you can add files to the staging area with:
+
+          <pre><code data-trim>$ git add >filename< (Add files)
+$ git add --all (To add all files)</code></pre>
+
+          An example:
+
+          <pre><code data-trim>$ git add git.c git.h git.o</code></pre>
+
+          These files you added to the staging area will be commited to your local database.
+        </p>
+        </section>
+
+        <section>
+        <h3>3. Commiting</h3>
+        <p>When you have added all the files you wish to commit just run:
+
+        <pre><code data-trim>$ git commit -m "Your commit message"</code></pre>
+
+        Some examples:
+
+        <pre><code data-trim>$ git commit -m "Add slide about pushing to a repository"</code></pre>
+
+        After commiting your files, the data will be safely stored
+        on your local database.</p>
+        </section>
+		  </section>
+
+      <!-- SLIDE 10 (Pushing) -->
+      <section>
+        <h2>And now you push</h2>
+        <p>All commits done? Want to share what you've done? <br>
+        This is when to use push, so the changes you made on your computer propragate
+        to the repository.
+
+        <pre><code data-trim>$ git push origin >branch name< </code></pre></p>
+
+        An example:
+
+        <pre><code data-trim>$ git push origin master</code></pre>
+
+      </section>
     </div>
   </div>
 
