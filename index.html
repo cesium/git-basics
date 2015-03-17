@@ -24,7 +24,7 @@
   <!-- Code syntax highlighting -->
   <link rel="stylesheet" href="lib/css/zenburn.css">
 
-    <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/custom.css">
 
   <!-- Printing and PDF exports -->
   <script>
@@ -69,23 +69,21 @@
         <section data-background="#82E8AE">
           <h3 class="colord">What is</h3><br>
           <h2 id="fancy">Version Control?</h2>
-            <i class="fa fa-code-fork colorf"></i><span class="colord"> What is it good for?</span><br> 
+            <i class="fa fa-code-fork colorf"></i><span class="colord"> What is it good for?</span><br>
             <i class="fa fa-code-fork colorf"></i><span class="colord"> Why do I need it?</span>
           </section>
 
           <!-- SLIDE 4 -->
           <section>
             <h2> Routine </h2>
-            <pre class="small-four"><code class="cpp">
-void routine{
+            <pre class="small-four"><code class="cpp">void routine() {
   create;
 
   while(!over){
     edit;
     save;
   }
-}
-            </code></pre>
+}</code></pre>
           </section>
 
           <!-- SLIDE 5 -->
@@ -96,7 +94,7 @@ void routine{
             <p> <i class="fa fa-code-fork colorc fragment"><span class="colora"> Why did it happen?</i> </span></p>
             <p> </p><i class="fa fa-code-fork colorc fragment"><span class="colora"> Who did it?</i> </span></p>
             <p> <i class="fa fa-code-fork colorc fragment"><span class="colora"> When?</i> </span></p>
-            <h5 class="fragment colorb">Commits</h5>                     
+            <h5 class="fragment colorb">Commits</h5>
           </section>
       </section>
 
@@ -112,23 +110,17 @@ void routine{
         <h2>Linux</h2>
 
         <h5 class="left">Debian/Ubuntu</h5>
-  	<pre><code data-trim>
-$ apt-get install git
-        </code></pre>
- 
+  	<pre><code data-trim>$ apt-get install git</code></pre>
+
         <h5 class="left">Arch</h5>
-        <pre><code data-trim>
-$ pacman -S git
-        </code></pre>
-        
+        <pre><code data-trim>$ pacman -S git</code></pre>
+
         <h5 class="left">Fedora</h5>
-        <pre><code data-trim>
-$ yum install git
-        </code></pre>
+        <pre><code data-trim>$ yum install git</code></pre>
         </section>
 
         <!-- SLIDE 8 -->
-        <section> 		
+        <section>
         <h2>Mac</h2>
         <a href="http://git-scm.com/download/mac">Download</a>
         <br>
@@ -138,7 +130,7 @@ $ yum install git
         <a href="http://git-scm.com/download/win">Download</a>
 	 </section>
       </section>
-		
+
   	 	<section>
               <!-- SLIDE 9 -->
               <section data-background="#82E8AE">
@@ -153,19 +145,13 @@ $ git config --global <span class="colorb">user.email</span> johndoe@example.com
         <!-- SLIDE 10 -->
         <section>
           <h5 class="left">Show configuration </h5>
-          <pre><code>
-git config --list
-          </code></pre>
+          <pre><code>git config --list</code></pre>
           <br>
           <h5 class="left">All users <small>/etc/gitconfig</small></h5>
-          <pre><code>
-git config --system                 
-          </code></pre>
+          <pre><code>git config --system</code></pre>
           <h5 class="left">This user <small>~/.config/git/config or ~/.gitconfig</small></h5>
-          <pre><code>
-git config --system                 
-<<<<<<< HEAD
-                </code></pre>
+          <pre><code>git config --system
+<<<<<<< HEAD</code></pre>
                 <h5 class="left">This project <small>.git/config</small></h5>
               </section>
               <section>
@@ -177,7 +163,7 @@ $ git init
                     <div class="subcommands">
                       <div class="subcommand small-two">
                         <pre><code data-trim>
- path
+path
                         </code></pre>
                       </div>
                       <div class="subcommand-description large-two left">
@@ -189,7 +175,7 @@ $ git init
                 </section>
   	 	</section>
 
-		
+
 		<!-- SLIDE 11 -->
       <section>
         <section data-background="#82E8AE">
@@ -266,16 +252,12 @@ $ git add --all (To add all files)</code></pre>
           </section>
           <section>
             <a href="http://git-scm.com/"><h2>Getting Help</h2></a>
-            <pre><code data-trim>
-$ git help <command>
+            <pre><code data-trim>$ git help <command>
 $ git <command> --help
-$ man git <command>
-            </code></pre>
-    
+$ man git <command></code></pre>
+
     <p>Example: Checking config help</p>
-    <pre><code data-trim>
-$ git help config
-    </code></pre>
+    <pre><code data-trim>$ git help config</code></pre>
     </section>
     </div>
   </div>
