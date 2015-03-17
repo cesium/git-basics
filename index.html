@@ -64,26 +64,50 @@
         </section>
       </section>
 
-      <!-- SLIDE 3 -->
       <section>
-        <h3 class="colora">What is</h3><br>
-        <h2 id="fancy">GIT?</h2>
-          <i class="fa fa-code-fork colorc"></i><span class="colora"> What is it good for?</span><br>
-          <i class="fa fa-code-fork colorc"></i><span class="colora"> Why do I need it?</span>
+        <!-- SLIDE 3 -->
+        <section data-background="#82E8AE">
+          <h3 class="colord">What is</h3><br>
+          <h2 id="fancy">Version Control?</h2>
+            <i class="fa fa-code-fork colorf"></i><span class="colord"> What is it good for?</span><br> 
+            <i class="fa fa-code-fork colorf"></i><span class="colord"> Why do I need it?</span>
+          </section>
+
+          <!-- SLIDE 4 -->
+          <section>
+            <h2> Routine </h2>
+            <pre class="small-four"><code class="cpp">
+void routine{
+  create;
+
+  while(!over){
+    edit;
+    save;
+  }
+}
+            </code></pre>
+          </section>
+
+          <!-- SLIDE 5 -->
+          <section>
+            <h2> Remote </h2>
+            <br>
+            <p> <i class="fa fa-code-fork colorc fragment"><span class="colora"> What happened?</i> </span></p>
+            <p> <i class="fa fa-code-fork colorc fragment"><span class="colora"> Why did it happen?</i> </span></p>
+            <p> </p><i class="fa fa-code-fork colorc fragment"><span class="colora"> Who did it?</i> </span></p>
+            <p> <i class="fa fa-code-fork colorc fragment"><span class="colora"> When?</i> </span></p>
+            <h5 class="fragment colorb">Commits</h5>                     
+          </section>
       </section>
 
-      <!-- SLIDE 4 -->
       <section>
-        <h2>Signup for a Github account</h2>
-        <a href="https://github.com">
-          <img src="img/git_homepage.png" height="300" width="820" alt="Git Homepage">
-        </a>
-      </section>
-	<!-- SLIDE 5 -->
-      <section>
+
+        <!-- SLIDE 6 -->
         <section data-background="#82E8AE">
-          <h1 id="colorf"> Installing Git </h1>
+          <h1 class="colorf"> Installing Git </h1>
         </section>
+
+        <!-- SLIDE 7 -->
         <section>
         <h2>Linux</h2>
 
@@ -103,7 +127,7 @@ $ yum install git
         </code></pre>
         </section>
 
-        <!-- SLIDE 6 -->
+        <!-- SLIDE 8 -->
         <section> 		
         <h2>Mac</h2>
         <a href="http://git-scm.com/download/mac">Download</a>
@@ -113,47 +137,60 @@ $ yum install git
         <h2>Windows</h2>
         <a href="http://git-scm.com/download/win">Download</a>
 	 </section>
-      </section>	
-  	<!-- SLIDE 7 -->
-  	<section>
-        <h2>First-Time Git Setup</h2>
-        <p>Setup your username and email first of all to avoid commiting without
-          your information.</p>
-        <pre><code data-trim>$ git config --global <span class="colorb">user.name</span> "John Doe"
+      </section>
+		
+  	 	<section>
+              <!-- SLIDE 9 -->
+              <section data-background="#82E8AE">
+                <h1 class="colorf"> Git Setup </h1>
+              </section>
+              <section>
+  	 		<h2>First-Time</h2>
+                  <p>Setup your username and email first of all to avoid commiting without your information.</p>
+  			<pre><code data-trim>$ git config --global <span class="colorb">user.name</span> "John Doe"
 $ git config --global <span class="colorb">user.email</span> johndoe@example.com</code></pre>
-  	 </section>
-		  <!-- SLIDE 7 -->
-		  <section>
+              </section>
 
-		    <h2>Getting Help</h2>
-		    <pre><code data-trim>$ git help <command>
-$ git &lt;<span class="colorc">command</span>&gt; --help
-$ man git &lt;<span class="colorc">command</span>&gt;</code></pre>
-
-		    <p>Example: Checking config help</p>
-		    <pre><code data-trim>$ git help config</code></pre>
-		  </section>
-
-		  <!-- SLIDE 8 (Creating a Git Repository) -->
+              <!-- SLIDE 10 -->
+              <section>
+                <h5 class="left">Show configuration </h5>
+                <pre><code>
+git config --list
+                </code></pre>
+                <br>
+                <h5 class="left">All users <small>/etc/gitconfig</small></h5>
+                <pre><code>
+git config --system                 
+                </code></pre>
+                <h5 class="left">This user <small>~/.config/git/config or ~/.gitconfig</small></h5>
+                <pre><code>
+git config --system                 
+                </code></pre>
+                <h5 class="left">This project <small>.git/config</small></h5>
+              </section>
               <section>
                 <h2>Creating a Git Repository</h2>
                 <div class="command">
                   <pre><code data-trim>
 $ git init
                   </code></pre>
-                  <div class="subcommands">
-                    <div class="subcommand small-two">
-                      <pre><code data-trim>
+                    <div class="subcommands">
+                      <div class="subcommand small-two">
+                        <pre><code data-trim>
  path
-                      </code></pre>
+                        </code></pre>
+                      </div>
+                      <div class="subcommand-description large-two left">
+                        <small><br>will create new directory if needed</small>
+                      </div>
+                    </div>
                   </div>
-                  <div class="subcommand-description large-two left">
-                    <small><br>will create new directory if needed</small>
-                  </div>
-                </div>
-              </div>
-              <p>Initialises a .git directory in your folder</p>
-              </section>
+                  <p>Initialises a .git directory in your folder</p>
+                </section>
+  	 	</section>
+
+		
+		<!-- SLIDE 11 -->
 
 		  <!-- SLIDE 9 (The Three States) -->
 		  <section>
@@ -219,6 +256,25 @@ $ git add --all (To add all files)</code></pre>
         <pre><code data-trim>$ git push origin master</code></pre>
 
       </section>
+          <section>
+              <h2>Signup for a Github account</h2>
+              <a href="https://github.com">
+              <img src="img/git_homepage.png" height="300" width="820" alt="Git Homepage">
+              </a>
+          </section>
+          <section>
+            <a href="http://git-scm.com/"><h2>Getting Help</h2></a>
+            <pre><code data-trim>
+$ git help <command>
+$ git <command> --help
+$ man git <command>
+            </code></pre>
+    
+    <p>Example: Checking config help</p>
+    <pre><code data-trim>
+$ git help config
+    </code></pre>
+    </section>
     </div>
   </div>
 

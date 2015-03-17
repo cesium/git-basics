@@ -2,27 +2,27 @@
     color: #3AFCD9;
 }
 
-.colora{
+.reveal .colora{
     color: #3AFCD9;
 }
 
-.colorb{
+.reveal .colorb{
     color: #FFF1B0;
 }
 
-.colorc{
+.reveal .colorc{
     color: #82E8AE;
 }
 
-.colord{
+.reveal .colord{
     color: #FF4066;
 }
 
-.colore{
+.reveal .colore{
     color: #FFF;
 }
 
-#colorf{
+.reveal .colorf{
     color: #002B36;
 }
 
@@ -50,9 +50,9 @@
 }
 
 #fancy{
-    font-size: 6em;
+    font-size: 4em;
     margin-top: -50px;
-    color: #FFF1B0;
+    color: #002B36;
 }
 
 .left{
@@ -77,16 +77,21 @@
     margin-left: 0px;
 }
 
-.small-one{
+.reveal .small-one{
     width: 10%
 }
 
-.small-two{
+.reveal .small-two{
     width: 20%
 }
 
-.small-three{
+.reveal .small-three{
     width: 30%
+}
+
+
+.reveal .small-four{
+    width: 40%
 }
 
 .reveal .large-one{
