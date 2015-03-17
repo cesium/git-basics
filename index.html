@@ -150,21 +150,21 @@ $ yum install git
   			<pre><code data-trim>$ git config --global <span class="colorb">user.name</span> "John Doe"
 $ git config --global <span class="colorb">user.email</span> johndoe@example.com</code></pre>
               </section>
-
-              <!-- SLIDE 10 -->
-              <section>
-                <h5 class="left">Show configuration </h5>
-                <pre><code>
+        <!-- SLIDE 10 -->
+        <section>
+          <h5 class="left">Show configuration </h5>
+          <pre><code>
 git config --list
-                </code></pre>
-                <br>
-                <h5 class="left">All users <small>/etc/gitconfig</small></h5>
-                <pre><code>
+          </code></pre>
+          <br>
+          <h5 class="left">All users <small>/etc/gitconfig</small></h5>
+          <pre><code>
 git config --system                 
-                </code></pre>
-                <h5 class="left">This user <small>~/.config/git/config or ~/.gitconfig</small></h5>
-                <pre><code>
+          </code></pre>
+          <h5 class="left">This user <small>~/.config/git/config or ~/.gitconfig</small></h5>
+          <pre><code>
 git config --system                 
+<<<<<<< HEAD
                 </code></pre>
                 <h5 class="left">This project <small>.git/config</small></h5>
               </section>
@@ -191,9 +191,11 @@ $ git init
 
 		
 		<!-- SLIDE 11 -->
-
-		  <!-- SLIDE 9 (The Three States) -->
-		  <section>
+      <section>
+        <section data-background="#82E8AE">
+          <h1 class="colorf">Git Staging</h1>
+        </section>
+        <!-- SLIDE 13 -->
         <section>
         <h2>The Three States</h2>
         <p>Your files can have three states:
