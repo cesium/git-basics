@@ -79,35 +79,49 @@
           <img src="img/git_homepage.png" height="300" width="820" alt="Git Homepage">
         </a>
       </section>
+	<!-- SLIDE 5 -->
+      <section>
+        <section data-background="#82E8AE">
+          <h1 id="colorf"> Installing Git </h1>
+        </section>
+        <section>
+        <h2>Linux</h2>
 
-		<!-- SLIDE 5 -->
-		  <section>
-		  	<h2>Installing Git</h2>
-		  	<div class="fragment">
-				<p>Linux</p>
-				<pre><code data-trim>$ apt-get install git</code></pre>
-		  	</div>
+        <h5 class="left">Debian/Ubuntu</h5>
+  	<pre><code data-trim>
+$ apt-get install git
+        </code></pre>
+ 
+        <h5 class="left">Arch</h5>
+        <pre><code data-trim>
+$ pacman -S git
+        </code></pre>
+        
+        <h5 class="left">Fedora</h5>
+        <pre><code data-trim>
+$ yum install git
+        </code></pre>
+        </section>
 
-			 <div class="fragment">
-				<p>Mac</p>
-				<a href="http://git-scm.com/download/mac" class="colord">Download Git for Mac</a>
-			 </div>
-
-			 <div class="fragment">
-				<p>Windows</p>
-				<a href="http://git-scm.com/download/win" class="colord">Download Git for Windows</a>
-			 </div>
-		  </section>
-
-  	 	<!-- SLIDE 6 -->
-  	 	<section>
-  	 		<h2>First-Time Git Setup</h2>
+        <!-- SLIDE 6 -->
+        <section> 		
+        <h2>Mac</h2>
+        <a href="http://git-scm.com/download/mac">Download</a>
+        <br>
+        <br>
+        <br>
+        <h2>Windows</h2>
+        <a href="http://git-scm.com/download/win">Download</a>
+	 </section>
+      </section>	
+  	<!-- SLIDE 7 -->
+  	<section>
+        <h2>First-Time Git Setup</h2>
         <p>Setup your username and email first of all to avoid commiting without
           your information.</p>
-  			<pre><code data-trim>$ git config --global <span class="colorb">user.name</span> "John Doe"
+        <pre><code data-trim>$ git config --global <span class="colorb">user.name</span> "John Doe"
 $ git config --global <span class="colorb">user.email</span> johndoe@example.com</code></pre>
-  	 	</section>
-
+  	 </section>
 		  <!-- SLIDE 7 -->
 		  <section>
 
@@ -121,12 +135,25 @@ $ man git &lt;<span class="colorc">command</span>&gt;</code></pre>
 		  </section>
 
 		  <!-- SLIDE 8 (Creating a Git Repository) -->
-		  <section>
-		  	<h2>Creating a Git Repository</h2>
-		  	<pre><code data-trim>$ git init</code></pre>
-		  	<p>Creates .git file that contains all of your necessary repository files <br />
-				Nothing is tracked yet</p>
-		  </section>
+              <section>
+                <h2>Creating a Git Repository</h2>
+                <div class="command">
+                  <pre><code data-trim>
+$ git init
+                  </code></pre>
+                  <div class="subcommands">
+                    <div class="subcommand small-two">
+                      <pre><code data-trim>
+ path
+                      </code></pre>
+                  </div>
+                  <div class="subcommand-description large-two left">
+                    <small><br>will create new directory if needed</small>
+                  </div>
+                </div>
+              </div>
+              <p>Initialises a .git directory in your folder</p>
+              </section>
 
 		  <!-- SLIDE 9 (The Three States) -->
 		  <section>

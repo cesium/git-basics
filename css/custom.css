@@ -1,3 +1,7 @@
+.reveal{
+    color: #3AFCD9;
+}
+
 .colora{
     color: #3AFCD9;
 }
@@ -16,6 +20,10 @@
 
 .colore{
     color: #FFF;
+}
+
+#colorf{
+    color: #002B36;
 }
 
 #logo{
@@ -45,4 +53,65 @@
     font-size: 6em;
     margin-top: -50px;
     color: #FFF1B0;
+}
+
+.left{
+    text-align: left;
+}
+
+.command pre{
+    float: left;
+    width: 20%;
+    margin-left: 10%;
+}
+
+.reveal div .subcommands {
+    width: 50%;;
+    position: absolute;
+    margin-left: 35%;
+}
+
+.subcommand pre{
+    width: 100%;
+    float: left;
+    margin-left: 0px;
+}
+
+.small-one{
+    width: 10%
+}
+
+.small-two{
+    width: 20%
+}
+
+.small-three{
+    width: 30%
+}
+
+.reveal .large-one{
+    width: 80%;
+    margin-left: 12%;
+}
+
+.reveal .large-two{
+    width: 70%;
+    margin-left: 22%;
+}
+
+.large-three{
+    width: 60%;
+    margin-left: 32%;
+}
+
+.reveal div .subcommand-description{
+    margin-top: 20px;
+    position: static;
+}
+
+.command{
+    height: 120px;
+}
+.command pre code {
+    overflow: hidden
 }
