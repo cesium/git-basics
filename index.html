@@ -131,21 +131,39 @@
       </section>
 
   	 	<section>
-              <!-- SLIDE 9 -->
-              <section data-background="#82E8AE">
-                <h1 class="colorf"> Git Setup </h1>
-              </section>
-              <section>
-  	 		<h2>First-Time</h2>
-                  <p>Setup your username and email first of all to give you credit for the
-                    code you are developing.</p>
-  			<pre><code data-trim>$ git config --global <span class="colorb">user.name</span> "John Doe"
+        <section data-background="#82E8AE">
+          <h1 class="colorf"> Git Setup </h1>
+        </section>
+        <section>
+  	 		  <h2>First-Time</h2>
+          <p>Setup your username and email first of all to give you credit for the
+          code you are developing.</p>
+  			 <pre><code data-trim>$ git config --global <span class="colorb">user.name</span> "John Doe"
 $ git config --global <span class="colorb">user.email</span> johndoe@example.com</code></pre>
-        <br>
-        <p>See configuration</p>
-        <pre><code data-trim>$ git config --list</code></pre>
-              </section>
+          <br>
+          <p>See configuration</p>
+          <pre><code data-trim>$ git config --list</code></pre>
+        </section>
 
+        <section>
+          <h2>Creating a Git Repository</h2>
+                        <div class="command">
+                          <pre><code data-trim>
+$ git init
+          </code></pre>
+                            <div class="subcommands">
+                              <div class="subcommand small-two">
+                                <pre><code data-trim>
+path
+          </code></pre>
+                              </div>
+                              <div class="subcommand-description large-two left">
+                                <small><br>will create new directory if needed</small>
+                              </div>
+                            </div>
+                          </div>
+                          <p>Initialises a .git directory in your folder</p>
+                        </section>
   	 	</section>
 
 
@@ -168,17 +186,15 @@ $ git config --global <span class="colorb">user.email</span> johndoe@example.com
 
         <section>
         <h3>1. Working Directory</h3>
-        <p>This is the files you have in your computer,
-          the ones you are currently working. <br>
-          When you edit the files they are modified. <br>
-          <br>
-          Seeing modified files:
-          <pre><code data-trim>$ git status</code></pre></p>
+        <p>These are the files that are under Git control and are unstaged. <br></p>
         </section>
 
         <section>
         <h3>2. The Staging Area</h3>
-        <p>After you've done your changes, you can stage files with:
+        <p>
+        Seeing file status:
+        <pre><code data-trim>$ git status</code></pre>
+        <br>After you've done your changes, you can stage files with:
 
           <pre><code data-trim>$ git add &lt;<span class="colorc">filename</span>&gt; (Add files)
 $ git add --all (To add all files)</code></pre>
@@ -213,14 +229,7 @@ $ git add --all (To add all files)</code></pre>
         </section>
 
         <section>
-          <h2>Why Branches?</h2>
-          <p>
-            <ul>
-              <li>Separate in development code from code that is already working</li>
-              <li>Separate Features in development from the rest of the code</li>
-              <li>Fix bugs</li>
-            </ul>
-          </p>
+          <h1>Why Branches?</h1>
         </section>
 
         <section>
@@ -249,9 +258,7 @@ $ git add --all (To add all files)</code></pre>
 
         <section>
           <h2>Merging</h2>
-        <p>Merging is when you push your finished code or work into another branch.
-          Do it when you have finished working on your feature, bug fix, etc.
-        </p>
+        <p>Do it when you have finished working on your feature, bug fix, etc.</p>
         </section>
 
         <section>
@@ -300,9 +307,7 @@ $ git merge test</code></pre>
       <section>
         <h2>Pushing</h2>
         <p>All commits done? Want to share what you've done? <br>
-        This is when to use push, so the changes you made on your computer propragate
-        to the repository.
-
+        <br>
         <pre><code data-trim>$ git push origin &lt;<span class="colorc">branch name</span>&gt;</code></pre></p>
 
         An example:
