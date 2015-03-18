@@ -230,7 +230,69 @@ $ git add --all (To add all files)</code></pre>
         </section>
 		  </section>
 
-          <section>
+      <!-- BRANCHES -->
+      <section>
+        <section data-background="#82E8AE">
+          <h1 class="colorf">Branches</h1>
+        </section>
+
+        <section>
+          <h2>Why Branches?</h2>
+          <p>
+            <ul>
+              <li>Separate in development code from code that is already working</li>
+              <li>Separate Features in development from the rest of the code</li>
+              <li>Fix bugs</li>
+            </ul>
+          </p>
+        </section>
+
+        <section>
+          <h2>Branching</h2>
+          <p>To create a branch
+          <pre><code data-trim>$ git branch test</code></pre>
+          To change branch
+          <pre><code data-trim>$ git checkout test</code></pre>
+          <br>
+          Or better yet!
+          <pre><code data-trim>$ git checkout -b test</code></pre>
+        </p>
+        </section>
+      </section>
+
+      <!-- MERGING -->
+      <section>
+        <section data-background="#82E8AE">
+          <h1 class="colorf">MERGING</h1>
+        </section>
+
+        <section>
+          <h2>Merging</h2>
+        <p>Merging is when you push your finished code into another branch. <br>
+          Merge your code when you have finished working on your feature, bug fix, etc.
+        </p>
+        </section>
+
+        <section>
+          <p>Merging test branch into master
+            <ol>
+              <li>Change to the branch you wish to merge your work</li>
+              <pre><code data-trim>$ git checkout master</code></pre>
+              <li>Merge the changes</li>
+              <pre><code data-trim>$ git merge test</code></pre>
+            </ol>
+          </p>
+        </section>
+      </section>
+
+      <!-- YOUR TURN NOW -->
+      <section>
+        <section data-background="#82E8AE">
+          <h1 class="colorf">Your turn now</h1>
+        </section>
+      </section>
+
+      <section>
         <section data-background="#82E8AE">
           <h1 class="colorf">Working Remote</h1>
         </section>
@@ -263,60 +325,6 @@ $ man git <command></code></pre>
 
     <p>Example: Checking config help</p>
     <pre><code data-trim>$ git help config</code></pre>
-    </section>
-
-    <section data-background="#82E8AE">
-      <h1 class="colorf">Branches</h1>
-    </section>
-
-    <section>
-      <h2>Why Branches?</h2>
-      <p>
-        <ul>
-          <li>Separate in development code from code that is already working</li>
-          <li>Separate Features in development from the rest of the code</li>
-          <li>Fix bugs</li>
-        </ul>
-      </p>
-    </section>
-
-    <section>
-      <h2>Branching</h2>
-      <p>To create a branch
-      <pre><code data-trim>$ git branch test</code></pre>
-      To change branch
-      <pre><code data-trim>$ git checkout test</code></pre>
-      <br>
-      Or better yet!
-      <pre><code data-trim>$ git checkout -b test</code></pre>
-    </p>
-    </section>
-
-    <section>
-      <section>
-        <h2>Merging</h2>
-      <p>Merging is when you push your finished code into another branch. <br>
-        Merge your code when you have finished working on your feature, bug fix, etc.
-      </p>
-      </section>
-
-      <section>
-        <p>Merging test branch into master
-          <ol>
-            <li>Change to the branch you wish to merge your work</li>
-            <pre><code data-trim>$ git checkout master</code></pre>
-            <li>Merge the changes</li>
-            <pre><code data-trim>$ git merge test</code></pre>
-          </ol>
-        </p>
-      </section>
-
-
-    </section>
-
-    <!-- 5: GIVE IT A TRY -->
-    <section data-background="#82E8AE">
-      <h1 class="colorf">Your turn now</h1>
     </section>
 
     <!-- 6: COOL SHIT -->
