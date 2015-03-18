@@ -292,31 +292,53 @@ $ git add --all (To add all files)</code></pre>
         </section>
       </section>
 
+      <!-- REMOTE -->
       <section>
         <section data-background="#82E8AE">
           <h1 class="colorf">Working Remote</h1>
         </section>
-      <!-- SLIDE 10 (Pushing) -->
+        <section>
+          <h2>Signup for a Github account</h2>
+          <a href="https://github.com">
+          <img src="img/git_homepage.png" height="300" width="820" alt="Git Homepage"></a>
+        </section>
+        <section>
+          <h2>BitBucket</h2>
+          <a href="https://bitbucket.com">
+          <img src="img/bitbucket_homepage.png" height="300" width="820" alt="BitBucket Homepage"></a>
+        </section>
+        <section>
+          <h2>Clone</h2>
+          <img src="img/github_clone.png" height="300" width="820" alt="GitHub Clone"></a>
+          <pre><code data-trim>$ git clone &lt;<span class="colorc">address</span>&gt;</code></pre>
+        </section>
+
       <section>
         <h2>And now you push</h2>
         <p>All commits done? Want to share what you've done? <br>
         This is when to use push, so the changes you made on your computer propragate
         to the repository.
 
-        <pre><code data-trim>$ git push origin &lt;<span class="colorc">branch name</span>&gt;</code></pre></p>
+        <pre><code data-trim>$ git push origin  &lt;<span class="colorc">branch name</span>&gt;</code></pre></p>
 
         An example:
 
-        <pre><code data-trim>$ git push origin master</code></pre>
+        <pre><code data-trim>$ git push -u</code></pre>
+
+      </section>
+      <section>
+        <h2>Pulling</h2>
+        <p>Need to grab what the others did?<br>
+        This is when to use push.
+
+        <pre><code data-trim>$ git pull origin &lt;<span class="colorc">branch name</span>&gt;</code></pre></p>
+
+        An example:
+
+        <pre><code data-trim>$ git pull -u</code></pre>
 
       </section>
       </section>
-          <section>
-              <h2>Signup for a Github account</h2>
-              <a href="https://github.com">
-              <img src="img/git_homepage.png" height="300" width="820" alt="Git Homepage">
-              </a>
-          </section>
           <section>
             <a href="http://git-scm.com/"><h2>Getting Help</h2></a>
             <pre><code data-trim>$ git help <command>
