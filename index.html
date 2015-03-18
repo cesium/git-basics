@@ -268,20 +268,23 @@ $ git add --all (To add all files)</code></pre>
 
         <section>
           <h2>Merging</h2>
-        <p>Merging is when you push your finished code into another branch. <br>
-          Merge your code when you have finished working on your feature, bug fix, etc.
+        <p>Merging is when you push your finished code or work into another branch.
+          Do it when you have finished working on your feature, bug fix, etc.
         </p>
         </section>
 
         <section>
-          <p>Merging test branch into master
+          <p>
             <ol>
               <li>Change to the branch you wish to merge your work</li>
-              <pre><code data-trim>$ git checkout master</code></pre>
+              <pre><code data-trim>$ git checkout &lt;<span class="colorc">branch-name</span>&gt;</code></pre>
               <li>Merge the changes</li>
-              <pre><code data-trim>$ git merge test</code></pre>
+              <pre><code data-trim>$ git merge &lt;<span class="colorc">branch-name</span>&gt;</code></pre>
             </ol>
           </p>
+            An example
+            <pre><code data-trim>$ git checkout master
+$ git merge test</code></pre>
         </section>
       </section>
 
