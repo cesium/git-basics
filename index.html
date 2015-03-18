@@ -151,7 +151,7 @@ $ git config --global <span class="colorb">user.email</span> johndoe@example.com
           <pre><code>git config --system</code></pre>
           <h5 class="left">This user <small>~/.config/git/config or ~/.gitconfig</small></h5>
           <pre><code>git config --system
-<<<<<<< HEAD</code></pre>
+          </code></pre>
                 <h5 class="left">This project <small>.git/config</small></h5>
               </section>
               <section>
@@ -297,8 +297,13 @@ $ man git <command></code></pre>
 
       <section>
         <p>Merging test branch into master
-        <pre><code data-trim>$ git checkout master
-$ git merge test</code></pre></p>
+          <ol>
+            <li>Change to the branch you wish to merge your work</li>
+            <pre><code data-trim>$ git checkout master</code></pre>
+            <li>Merge the changes</li>
+            <pre><code data-trim>$ git merge test</code></pre>
+          </ol>
+        </p>
       </section>
 
 
