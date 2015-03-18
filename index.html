@@ -175,14 +175,14 @@ $ git config --global <span class="colorb">user.email</span> johndoe@example.com
 
         <section>
         <h3>2. The Staging Area</h3>
-        <p>After you've done your changes, you can add files to the staging area with:
+        <p>After you've done your changes, you can stage files with:
 
           <pre><code data-trim>$ git add &lt;<span class="colorc">filename</span>&gt; (Add files)
 $ git add --all (To add all files)</code></pre>
 
           An example:
 
-          <pre><code data-trim>$ git add git.c git.h git.o</code></pre>
+          <pre><code data-trim>$ git add git.c git.h</code></pre>
 
           These files you added to the staging area will be commited to your local database.
         </p>
@@ -192,7 +192,7 @@ $ git add --all (To add all files)</code></pre>
         <h3>3. Commiting</h3>
         <p>When you have added all the files you wish to commit just run:
 
-        <pre><code data-trim>$ git commit -m "Your commit message"</code></pre>
+        <pre><code data-trim>$ git commit</code></pre>
 
         Some examples:
 
@@ -230,6 +230,11 @@ $ git add --all (To add all files)</code></pre>
           Or better yet!
           <pre><code data-trim>$ git checkout -b test</code></pre>
         </p>
+        </section>
+
+        <section>
+          <p>Listing all branchs</p>
+          <pre><code data-trim>$ git branch</code></pre>
         </section>
       </section>
 
@@ -285,7 +290,7 @@ $ git merge test</code></pre>
         </section>
         <section>
           <h2>Clone</h2>
-          <img src="img/github_clone.png" height="300" width="820" alt="GitHub Clone"></a>
+          <img src="img/github_clone.png" height="400" width="820" alt="GitHub Clone"></a>
           <pre><code data-trim>$ git clone &lt;<span class="colorc">address</span>&gt;</code></pre>
         </section>
 
